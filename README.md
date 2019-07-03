@@ -17,19 +17,38 @@ then it moves until the edge of the wall is detected.
 This wall follwoing is broken into segments durign which the robot checks the m-line and the proximity to the walls. When the edge is detected, the algorithm updates the orientation of the robot to follow the new wall. 
 
 The robot moves and rotates using the move and rotate class funtions defined. A special checker funtion is often called to see how far it is from the m-line.
-Due to noice in rotations, when the robot reaches the goal it calculates its deviation from the goal and move towards it, this step is intentionally left in the end, since the noise accumulates over sucessive rotations and is most pronounced towards the end
+Due to noise in rotations, when the robot reaches the goal it calculates its deviation from the goal and move towards it, this step is intentionally left in the end, since the noise accumulates over sucessive rotations and is most pronounced towards the end
 
 ## Funtions Overviews
 
 *scan_callback*: processing the kinect data, replaces the nan and any value greater than 3 to 100.
+
 *OutAndBack*: The class where everything happens, init is the main algorithm.
+
 *checker*: checks proximity to the m-line and changes state if on the m-line.
+
 *dist*: gives distences between two points
+
 *rotate*: rotates the robots if the by input angle and its tolerance
+
 *move*: move the robot the specified distance
+
 *stop*: stops the robot
+
 *printer*: prints the the left right and cener depth data and also the positon of the robot
+
 *change*: change sthe state of the robot
+
 *getFollow*: gives the current state of the robot
+
 *get_odom*: from tutorial, gives positon of the robot
+
 *shutdown*: sutdowns the robot
+
+
+
+
+[w1]:
+[w2]:
+[w3]:
+[w4]:
