@@ -50,23 +50,11 @@ def scan_callback(msg):
             # voluntary blinditude
         elif cleanedList[x] >= 3.2:
             cleanedList[x] = nanval;
-            # print type(msg.ranges[x])
-            # print msg.ranges[x]
 
-    # assert 1==2
-    # cleanedList.append(9.99)
-    # if min(cleanedList[539:639]) > 3:
-    #     global g_range_left
-    #     g_range_left = 100
-    # else:
+
     global g_range_left
     g_range_left = min(cleanedList[539:639])
 
-
-    # if cleanedList[:99] > 3:
-    #     global g_range_right
-    #     g_range_right = 100
-    # else:
     global g_range_right
     g_range_right = min(cleanedList[:99])
 
@@ -74,14 +62,10 @@ def scan_callback(msg):
     if (g_range_right < 100)&(g_range_left < 100)&(min(cleanedList[269:369]) == 100):
         global g_range_ahead
         g_range_ahead = (g_range_right+ g_range_left)/4
-        # g_range_ahead = math.cos(msg.range_max)*g_range_left        
-        # print "smoothed value nan:", g_range_ahead
+
     else:
         global g_range_ahead
         g_range_ahead = min(cleanedList[269:369])
-
-    # print cleanedList
-    # print "**************************************************************************************"
 
 
 
