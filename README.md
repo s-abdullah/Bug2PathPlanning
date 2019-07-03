@@ -45,10 +45,27 @@ Due to noise in rotations, when the robot reaches the goal it calculates its dev
 
 *shutdown*: shutdowns the robot
 
+## Testing
 
+The algorithm was tested on 4 different worlds with increasingly difficult objects for the sensors to detect.
 
+World#1:
 
-[w1]:
-[w2]:
-[w3]:
-[w4]:
+![alt text][w1]
+
+World#2:
+
+![alt text][w2]
+
+World#3:
+
+![alt text][w3]
+
+World#4:
+
+![alt text][w3]
+
+[w1]:https://github.com/s-abdullah/Bug2PathPlanning/blob/master/gifs/w1.gif 
+[w2]:https://github.com/s-abdullah/Bug2PathPlanning/blob/master/gifs/w2.gif 
+[w3]:https://github.com/s-abdullah/Bug2PathPlanning/blob/master/gifs/w3.gif 
+[w4]:https://github.com/s-abdullah/Bug2PathPlanning/blob/master/gifs/w4.gif 
