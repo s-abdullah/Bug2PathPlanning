@@ -41,9 +41,9 @@ Due to noise in rotations, when the robot reaches the goal it calculates its dev
 
 *getFollow*: gives the current state of the robot
 
-*get_odom*: from tutorial, gives positon of the robot
+*get_odom*: gives positon of the robot
 
-*shutdown*: sutdowns the robot
+*shutdown*: shutdowns the robot
 
 
 
